@@ -1,6 +1,9 @@
 
 
 def gerador_try_except(function):
+    '''
+    Um decorador em python, com o intuito de capturar e printar possíveis exceções
+    '''
     
     def inner(*args, **kwargs):
         
@@ -13,8 +16,3 @@ def gerador_try_except(function):
             print('Ocorreu um erro do tipo {} na execução da função {}. O erro foi: {}'.format(type(e),function.__name__, e))
     
     return inner
-
-
-    
-def funcao_tal()
-    print('teste')
